@@ -1,6 +1,6 @@
 'use client';
 import Cards from "@/components/Home/Cards";
-import Grafics from "@/components/Home/Grafic";
+import Grafics from "@/components/Home/Grafic/page";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
           <Cards title="Total" value={3000} valueclassName="text-sky-500" />
         </div>
         <div>
-          
+          <h1>Evolução financeira</h1>
           <Grafics />
         </div>
       </main>

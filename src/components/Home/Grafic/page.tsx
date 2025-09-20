@@ -46,7 +46,7 @@ const data = [
   },
 ];
 
-const Example = () => {
+const Grafics = () => {
   return (
     <div className='w-full h-96 bg-white p-4 rounded-lg shadow-md mt-4'>
       <ResponsiveContainer width="100%" height="100%">
@@ -65,8 +65,8 @@ const Example = () => {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Area type="monotone" dataKey="pv" stroke="#8884d8" fill="#8884d8" />
-          <Area type="monotone" dataKey="uv" stroke="#5edf3eff" fill="#e02630ff" />
+          <Area type="monotone" dataKey="pv" stroke="#2376f1ff" fill="#2376f1ff" />
+          <Area type="monotone" dataKey="uv" stroke="#e02630ff" fill="#e02630ff" />
           <Area type="monotone" dataKey="amt" stroke="#82ca9d" fill="#20db20ff" />
         </AreaChart>
       </ResponsiveContainer>
@@ -74,4 +74,4 @@ const Example = () => {
   );
 };
 
-export default Example;
+export default Grafics;
