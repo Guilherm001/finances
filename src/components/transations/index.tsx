@@ -35,27 +35,47 @@ const Lista = ()=>{
         
 
     return (
+        
         <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Título</th>
-                        <th>Valor</th>
-                        <th>Categoria</th>
-                        <th>Data</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {simulacaoTransacoes.map(transacao => (
-                        <tr key={transacao.id}>
-                            <td>{transacao.title}</td>
-                            <td>{transacao.amount}</td>
-                            <td>{transacao.type}</td>
-                            <td>{transacao.category}</td>
-                            </tr>
-                     ))}
-                </tbody>
-            </table>
+            <div>
+                
+            </div>
+            <div>
+                <form action="">
+                    <input type="text" placeholder="Título" />
+                    <input type="number" placeholder="Valor" />
+                    <div>
+                        <input type="radio" id="income" name="type" value="income" />
+                        <label htmlFor="income">Entrada</label>
+                        <input type="radio" id="expense" name="type" value="expense" />
+                        <label htmlFor="expense">Saída</label>
+                    </div>
+                    <input type="text" placeholder="Categoria" />
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr className="text-left text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                            <th className="p-4">Título</th>
+                            <th className="p-4">Valor</th>
+                            <th className="p-4">Categoria</th>
+                            <th className="p-4">Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {simulacaoTransacoes.map(transacao => (
+                            <tr key={transacao.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 ">
+                                <td className="p-4">{transacao.title}</td>
+                                <td>{transacao.amount}</td>
+                                <td>{transacao.type}</td>
+                                <td>{transacao.category}</td>
+                                </tr>
+                         ))}
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }
