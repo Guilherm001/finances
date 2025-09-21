@@ -1,3 +1,6 @@
+'use client'
+import { useState } from "react";
+import Modal from './modal/index'
 
 const Lista = ()=>{
 
@@ -32,28 +35,23 @@ const Lista = ()=>{
             category: 'Alimentação'
         }
     ];
+
+    const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+
         
 
     return (
         
         <div>
             <div>
-                
+                <h1>clicaaa</h1>
+                <button onClick={() => setIsModalOpen(!isModalOpen)} className="bg-green-500">Nova Transação</button>
+
+                <Modal isOpen={isModalOpen} />
+
             </div>
-            <div>
-                <form action="">
-                    <input type="text" placeholder="Título" />
-                    <input type="number" placeholder="Valor" />
-                    <div>
-                        <input type="radio" id="income" name="type" value="income" />
-                        <label htmlFor="income">Entrada</label>
-                        <input type="radio" id="expense" name="type" value="expense" />
-                        <label htmlFor="expense">Saída</label>
-                    </div>
-                    <input type="text" placeholder="Categoria" />
-                    <button type="submit">Cadastrar</button>
-                </form>
-            </div>
+            
             <div>
                 <table>
                     <thead>
