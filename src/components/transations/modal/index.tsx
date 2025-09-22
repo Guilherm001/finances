@@ -5,7 +5,7 @@ const Modal = ({ isOpen }: modal) => {
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center text-black">
             <div className="bg-white p-6 rounded shadow-lg w-full max-w-md">
                 <h2 className="text-xl mb-4">Nova Transação</h2>
                 <form>
@@ -19,6 +19,7 @@ const Modal = ({ isOpen }: modal) => {
                     </div>
                     <input type="text" placeholder="Categoria" className="w-full mb-4 p-2 border" />
                     <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded">Cadastrar</button>
+                    <button type="submit" className="ml-2 bg-gray-500 text-white px-4 py-2 rounded">Fechar</button>
                 </form>
             </div>
         </div>

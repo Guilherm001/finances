@@ -36,7 +36,7 @@ export default function RootLayout({
             <span className="text-lg font-semibold ">Bem vindo Guilherme!</span>
             <button className=" px-3 py-1  bg-green-600 rounded-md hover:bg-green-700">Sair</button>
           </header>
-          <section className="flex-1 p-6 overflow-y-auto">
+          <section className="flex-1 p-6 overflow-y-auto bg-gray-300">
             {children}
           </section>
         </main>
