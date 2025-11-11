@@ -1,6 +1,7 @@
 'use client'
 import { useState } from "react";
 import Modal from './modal/index'
+import Cards from "@/components/Home/Cards";
 
 const Lista = ()=>{
 
@@ -44,8 +45,9 @@ const Lista = ()=>{
     return (
         
         <div>
+            <Cards title="Total" value={3000} valueclassName="text-sky-500" />
             <div>
-                <h1>clicaaa</h1>
+                
                 <button onClick={() => setIsModalOpen(!isModalOpen)} className="bg-green-500 p-2 rounded-3xl m-3 hover:bg-sky-500 ">Nova Transação</button>
 
                 <Modal isOpen={isModalOpen} />
