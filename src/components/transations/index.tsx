@@ -46,7 +46,7 @@ const Lista = ()=>{
         <div>
             <div>
                 <h1>clicaaa</h1>
-                <button onClick={() => setIsModalOpen(!isModalOpen)} className="bg-green-500">Nova Transação</button>
+                <button onClick={() => setIsModalOpen(!isModalOpen)} className="bg-green-500 p-2 rounded-3xl m-3 hover:bg-sky-500 ">Nova Transação</button>
 
                 <Modal isOpen={isModalOpen} />
 
