@@ -23,7 +23,7 @@ export default function RootLayout({
           <nav className="flex flex-col gap-4 ">
             <a href="./" className="hover:text-green-400 text-slate-200"> Dashboard</a>
             <a href="/transactions" className="hover:text-green-400 text-slate-200">Transações</a>
-            <a href="#" className="hover:text-green-400 text-slate-200">Relarorios</a>
+            <a href="/relatorios" className="hover:text-green-400 text-slate-200">Relarorios</a>
             <a href="#" className="hover:text-green-400 text-slate-200">Configurações</a>
           </nav>
         </aside>
