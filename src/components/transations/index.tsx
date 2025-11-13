@@ -53,9 +53,9 @@ const Lista = ()=>{
             </div>
             
             <div>
-                <table>
+                <table className="w-full text-sm text-left text-gray-900">
                     <thead>
-                        <tr className="text-left text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                        <tr className="text-xs text-gray-700 uppercase bg-gray-50">
                             <th className="p-4">Título</th>
                             <th className="p-4">Valor</th>
                             <th className="p-4">Categoria</th>
@@ -64,7 +64,7 @@ const Lista = ()=>{
                     </thead>
                     <tbody>
                         {simulacaoTransacoes.map(transacao => (
-                            <tr key={transacao.id} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 ">
+                            <tr key={transacao.id} className="bg-white border-b odd:bg-gray-150 even:bg-gray-50 hover:bg-gray-200 ">
                                 <td className="p-4">{transacao.title}</td>
                                 <td>{transacao.amount}</td>
                                 <td>{transacao.type}</td>
