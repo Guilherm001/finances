@@ -31,6 +31,13 @@ export default function Relatorios() {
             amount: 300,
             category: 'Renda',
             date: '22/11/2023'
+        },
+        {
+            id: 4,
+            title: 'Aluguel',
+            amount: 800,
+            category: 'Despesas',
+            date: '01/11/2023'
         }
 
     ]
@@ -38,26 +45,30 @@ export default function Relatorios() {
     return (
         <div>
             <table className="w-full text-sm text-left text-gray-900">
-                <thead>
-                    <tr>
-                        <th>Titulo</th>
-                        <th>Valor</th>
-                        <th>Categoria</th>
-                        <th>Data</th>
-                    </tr>
-                </thead>
-                <tbody>
-                        {simulacaoRelatorios.map(relatorio => (
-                    <tr>
-                        <td>{relatorio.title}</td>
-                        <td>{relatorio.amount}</td>
-                        <td>{relatorio.category}</td>
-                        <td>{relatorio.date}</td>
-                    </tr>
-                ))}
-                    
-                </tbody>
-            </table>
+    <thead className="text-xs text-gray-700 uppercase bg-gray-50">
+        <tr>
+            <th scope="col" className="px-6 py-3">Titulo</th>
+            <th scope="col" className="px-6 py-3">Valor</th>
+            <th scope="col" className="px-6 py-3">Categoria</th>
+            <th scope="col" className="px-6 py-3">Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        {simulacaoRelatorios.map((relatorio, index) => (
+            
+            <tr 
+                key={index}
+                className="bg-white border-b odd:bg-gray-150 even:bg-gray-50 hover:bg-gray-200"
+            >
+                <td className="px-6 py-4">{relatorio.title}</td>
+                <td className="px-6 py-4">{relatorio.amount}</td>
+                <td className="px-6 py-4">{relatorio.category}</td>
+                <td className="px-6 py-4">{relatorio.date}</td>
+            </tr>
+        ))}
+    </tbody>
+</table>
+
         </div>
     );
 }
