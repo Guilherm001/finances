@@ -1,4 +1,5 @@
 'use client'
+import Pesquisa from "./Pesquisa/index";
 
 export default function Relatorios() {
 
@@ -38,12 +39,22 @@ export default function Relatorios() {
             amount: 800,
             category: 'Despesas',
             date: '01/11/2023'
+        },
+        {
+            id: 5,
+            title: 'Academia',
+            amount: 120,
+            category: 'Despesas',
+            date: '01/11/2023'
         }
 
     ]
     
     return (
         <div>
+            <div>
+                <Pesquisa />
+            </div>
             <table className="w-full text-sm text-left text-gray-900">
     <thead className="text-xs text-gray-700 uppercase bg-gray-50">
         <tr>
