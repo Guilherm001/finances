@@ -7,7 +7,7 @@ export default function Pes() {
         placeholder="escreva para pesquisar..."
         className="border border-gray-300 p-2 rounded w-full bg-white"
       />
-      <button type="submit" className='bg-blue-500 text-white p-2 ml-2 rounded'>
+      <button type="submit" className='bg-blue-500 text-white p-2 ml-2 rounded hover:bg-blue-600'>
         Buscar
       </button>
     </form>
